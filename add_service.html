@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة خدمة جديدة</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center">إضافة خدمة جديدة</h2>
+        <form>
+            <div class="mb-3">
+                <label for="serviceName" class="form-label">اسم الخدمة</label>
+                <input type="text" class="form-control" id="serviceName" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceCategory" class="form-label">تصنيف الخدمة</label>
+                <select class="form-control" id="serviceCategory" required>
+                    <option>🏠 السكن والإقامة</option>
+                    <option>🚗 النقل</option>
+                    <option>🍽️ المطاعم</option>
+                    <option>🛒 السوبر ماركت</option>
+                    <option>☕ الكافيه وسبل الترفيه</option>
+                    <option>🎂 الحلويات</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="serviceDescription" class="form-label">وصف الخدمة</label>
+                <textarea class="form-control" id="serviceDescription" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="servicePhone" class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" id="servicePhone" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceLocation" class="form-label">الموقع الجغرافي</label>
+                <input type="text" class="form-control" id="serviceLocation" placeholder="رابط Google Maps" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceImages" class="form-label">تحميل الصور (4 صور كحد أقصى)</label>
+                <input type="file" class="form-control" id="serviceImages" accept="image/*" multiple required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">إرسال الطلب</button>
+        </form>
+    </div>
+</body>
+</html>
